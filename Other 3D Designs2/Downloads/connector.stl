@@ -1,0 +1,16 @@
+module connector(){
+
+union(){
+difference(){
+ translate([0,0,0]) cylinder(h=15, r=25, $fn=100);
+cylinder(h=15, r1=21.4, $fn=100);
+}
+
+translate([0,25,0])rotate([90,0,0]) 
+difference(){
+cube([50,15,3]);
+translate([38,7.5,0]) cylinder(h=4, r=2.6, $fn=100);
+}
+}
+}
+connector();
